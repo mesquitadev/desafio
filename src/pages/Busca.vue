@@ -5,7 +5,7 @@
         <input type="text" v-model="itemDePesquisa" placeholder="Digite sua busca...">
       <button class="btn-default" type="submit" @click="buscaGifs(itemDePesquisa)">buscar</button>
       <div class="row" >
-        <button class="btn-default"> Gifs Salvos</button>
+        <router-link to="/salvos" class="btn-default">Gifs Salvos</router-link>
       </div>
      </div>
       <Card>
@@ -49,7 +49,11 @@ export default {
       }      
     },
     salvarGif(item) {
-      this.salvos.push(item)
+      this.salvos.push({
+        url: item.url,
+        nome: item.title,
+        autor: item.author
+      })
       const dados = JSON.stringify(this.salvos);
       localStorage.setItem("gifs", dados)
       alert("Salvo com Sucesso")

@@ -1,16 +1,12 @@
 <template>
     <div id="app">
-      <Busca/>
+      <router-view></router-view>
     </div>
 </template>
 
 <script>
-import Busca from './pages/Busca'
 export default {
   name: 'App',
-  components: {
-    Busca,
-  }
   
 }
 </script>
