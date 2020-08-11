@@ -11,6 +11,10 @@
     "core-js": "^3.6.5",
     "semantic-ui": "^2.4.2",
     "vue": "^2.6.11",
+    "vue-observe-visibility": "^0.4.6",
+    "vue-router": "^3.4.2",
+    "vue-semantic-modal": "^2.1.0",
+    "vue-stringify": "^0.1.2",
     "vue-styled-components": "^1.5.1"
   },
   "devDependencies": {
